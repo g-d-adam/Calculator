@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Calculator</title>
+    <script src="https://unpkg.com/fengari-web@0.1.4/dist/fengari-web.js"></script>
+    <title>Lua Calculator</title>
 </head>
 <body>
     <header>
-        <p>Calculator by Lua language</p>
+        <p>Made with Lua using Fengari</p>
     </header>
     <main>
-        <div>
+        <div id="calculator">
             <div>
-                <input type="text" id="display" disabled>
+                <input type="text" id="display" readonly disabled>
             </div>
-            <div>
-                <button id="seven">7</button>
-                <button id="eight">8</button>
-                <button id="nine">9</button>
-                <button id="four">4</button>
-                <button id="five">5</button>
-                <button id="six">6</button>
-                <button id="one">1</button>
-                <button id="two">2</button>
-                <button id="three">3</button>
-                <button id="zero">0</button>
-            <div>
+            <div id="num-buttons">
+                <button class="button" id="seven">9</button>
+                <button class="button" id="eight">8</button>
+                <button class="button" id="nine">7</button>
+                <button class="button" id="four">6</button>
+                <button class="button" id="five">5</button>
+                <button class="button" id="six">4</button>
+                <button class="button" id="one">3</button>
+                <button class="button" id="two">2</button>
+                <button class="button" id="three">1</button>
+                <button class="button" id="zero">0</button>
+            </div>
+            <div id="operator-buttons">
+                <button id="backspace">←</button>
                 <button id="clear">C</button>
                 <button id="divide">/</button>
                 <button id="multiply">*</button>
+                <button id="modulo">%</button>
                 <button id="subtract">-</button>
                 <button id="add">+</button>
+                <button id="negate">+/-</button>
+                <button id="decimal">.</button>
                 <button id="equals">=</button>
             </div>
         </div>
@@ -39,11 +45,11 @@
     <footer>
         <p>Made with Lua</p>
         <p>Version 5.1.5</p>
-        <p>Author: Adam</p>
+        <p>Author: Adam (AI helped with CSS)</p>
         <p>Started: 5/18/2025</p>
         <p>finished: 5//2025</p>
         <p>License: none</p>
     </footer>
-    <script src="script.lua"></script>
+    <script type="application/lua" src="script.lua"></script>
 </body>
 </html>
